@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Initiatives</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: beige;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-bottom: 2px solid rgb(73, 39, 2);
+            margin-bottom: 40px;
+        }
+        .navbar a img{
+           height: 15vh;
+            padding: 20px;
+            margin-right: 20px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            padding: 14px 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #ff9000;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            background-color: beige;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            overflow: hidden;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .col {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .col img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .col h1 {
+            margin: 0 0 20px;
+            color: #333;
+            font-size: 28px;
+        }
+
+        .col p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #000;
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        .feedback, .impact {
+            margin-top: 20px;
+        }
+
+        .feedback p, .impact p {
+            font-style: italic;
+        }
+
+        .initiative-title {
+            background-color: burlywood;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid rgb(73, 39, 2);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .view-more {
+            background-color: rgb(73, 39, 2);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .view-more:hover {
+            background-color: #ff9000;
+        }
+
+        .page-title {
+            color: beige;
+            margin: 20px 0;
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .logo {
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+   
+    <nav class="navbar">
+        <a href="index.html"><img src="images/ahar sewa.jpg" alt="Logo" class="logo" width="100%"></a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="signin.html" class="nav-link">Sign In</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="page-title">Our Initiatives</h1>
+    <div class="container">
+  
+        <div class="initiative-title">
+            <h1>No Sugar Challenge: A Step Towards Healthier Youth</h1>
+        </div>
+        <div class="row">
+           
+            <div class="col">
+                <h1>The Challenge</h1>
+                <p class="summary">We discovered that less than 10% of youths in our locality engage in community services. To address this, we launched the "No Sugar Challenge," encouraging youths to cut sugar from their diets.</p>
+                <button class="view-more" onclick="toggleContent('no-sugar', this)">View More</button>
+                <div id="no-sugar" class="hidden">
+                    <p class="highlight">Health is the foundation of personal competencies, promoting:</p>
+                    <ul>
+                        <li>Physical well-being</li>
+                        <li>Mental clarity</li>
+                        <li>Emotional stability</li>
+                        <li>Resilience</li>
+                    </ul>
+                    <h3>Campaign Efforts</h3>
+                    <p>We campaigned vigorously, using posters in our college premises and local areas to spread awareness about the challenge.</p>
+                    <h3>Participant Feedback</h3>
+                    <div class="feedback">
+                        <p>Abhinash Singh: "I never realized how much sugar was affecting my digestion until I eliminated it from my diet. I feel less bloated and more regular, which is a huge relief."</p>
+                        <p>Neha Dharani: "I'm amazed at how much my mood has improved since ditching sugar. I used to have these crazy mood swings, but now I feel more balanced and happier overall."</p>
+                        <p>Deepak Chaudhary: "I never thought I'd be able to stick to a sugar-free diet, but I'm so glad I did. My focus and concentration have improved, and I'm getting better grades in school because of it."</p>
+                    </div>
+                    <h3>Impact Infographic</h3>
+                    <div class="impact">
+                        <p>Number of Participants Registered: 48</p>
+                        <p>Completed One Week: 12</p>
+                        <p>Completed Two Weeks: 15</p>
+                    </div>
+                    <p>The "No Sugar Challenge" proved to be a significant step towards encouraging healthier habits among our youth. We look forward to more such initiatives to promote well-being and community engagement.</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="sugar.png" alt="No Sugar Challenge" height="60vh">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="initiative-title">
+            <h1>Check the Label: Educating on Nutritional Awareness</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="label.jfif" alt="Check the Label">
+            </div>
+            <div class="col">
+                <h1>The Importance of Food Labels</h1>
+                <p class="summary">Our latest initiative, "Check the Label," aims to educate people about the importance of checking food labels before, during, and after consuming food items.</p>
+                <button class="view-more" onclick="toggleContent('check-label', this)">View More</button>
+                <div id="check-label" class="hidden">
+                    <p class="highlight">Food labels provide essential information about the nutritional content of the food we consume. By learning to read and understand these labels, individuals can make informed choices about their diet, helping them to:</p>
+                    <ul>
+                        <li>Avoid excess sugar, salt, and unhealthy fats</li>
+                        <li>Choose foods with high nutritional value</li>
+                        <li>Maintain a balanced diet</li>
+                        <li>Reduce the risk of diet-related diseases</li>
+                    </ul>
+                    <h3>Campaign Efforts</h3>
+                    <p>To promote this initiative, we will conduct workshops, distribute informational brochures, and engage with local communities through social media campaigns. Our aim is to make checking food labels a common practice among all age groups.</p>
+                    <h3>Key Points to Check on Labels</h3>
+                    <ul>
+                        <li>Serving Size: Understanding the portion size and comparing it to what you actually consume.</li>
+                        <li>Calories: Keeping track of calorie intake to maintain a healthy weight.</li>
+                        <li>Nutrient Content: Focusing on key nutrients such as protein, fiber, vitamins, and minerals.</li>
+                        <li>Sugar and Fat: Identifying added sugars and unhealthy fats to avoid them.</li>
+                        <li>Ingredients List: Checking for artificial additives and preservatives.</li>
+                    </ul>
+                    <h3>Expected Impact</h3>
+                    <p>We anticipate that this initiative will lead to better dietary choices, improved health outcomes, and greater awareness of the impact of food on overall well-being.</p>
+                    <p>Through "Check the Label," we hope to empower individuals to take control of their health by making informed dietary choices.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(id, button) {
+            const element = document.getElementById(id);
+            if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden');
+                button.textContent = 'View Less';
+            } else {
+                element.classList.add('hidden');
+                button.textContent = 'View More';
+            }
+        }
+    </script>
+</body>
+</html>
